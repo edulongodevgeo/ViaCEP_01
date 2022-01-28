@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaCEP__EduLongo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+  <div class="container">
+
+   <div class="bloco__texto">
+    <h1 class="bloco__texto__h1"> CE<span> vai </span>P<span>a onde?</span></h1>
+    <lab class="bloco__texto__lab">Sistema de busca de endereços baseado na API "ViaCEP".</lab>
+   </div>
+
+   <div class="aviso">Digite o CEP |Somente números. Não utilize pontos.|</div>
+
+   <div class="bloco__puts">
+    <input type="number" id="cep" class="bloco__puts__input">
+    <button onclick="consultaCEP()" class="bloco__puts__btn">Consulte</button>
+   </div>
+
+  <div class="resultado__pai">
+   <div id="resultado">
+     <p></p>
+   </div>
+  </div>
+
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
