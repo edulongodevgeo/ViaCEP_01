@@ -5,7 +5,7 @@ Link preview: https://viacep.eduardolongo1.repl.co/
 
 ## Screenshots
 
-![alt text](img/print_viacep.jpg)
+![alt text](img/viacep.jpg)
 ## Funcionalidades
 
 - Consumo da API ViaCEP;
