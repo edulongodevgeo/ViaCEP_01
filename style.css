@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Permanent+Marker&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
   margin: 0;
@@ -7,8 +7,9 @@
 }
 
 html {
-font-family: 'Fredoka One', cursive;
-height: 100%;
+font-family: 'Indie Flower', cursive;
+font-weight: bold;
+font-size: 1.2rem;
 }
 
 body {
@@ -19,33 +20,25 @@ body {
   background-size: cover;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .container {
-  /* background-color: whitesmoke; */
-  background: rgba(255,255,255,0.4);
-  backdrop-filter: blur(10px);
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
   border-radius: 10px;
-  //border: 1px solid rgba(255,255,255,0.2);
-  padding: 2rem;
+  border: 5px solid #f0e5e5;
+  padding: 1rem
 }
 
-.resultado__pai {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* #resultado {
-  padding: 10px;
-  margin-top: 10px;
-  max-width: 350px;
-  background-color: whitesmoke;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.514);
-
-} */
 
 .bloco__texto {
   margin: 10px;
@@ -55,32 +48,13 @@ body {
   align-items: center;
 }
 
+
 .bloco__texto__h1 {
-color: rgb(255, 238, 0);
-font-weight: bold;
-font-weight: 900;
+color: rgb(0, 0, 0);
 font-size: 50px;
 text-align: center;
--webkit-text-stroke-width: 4px; /* largura da borda */
--webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
 }
 
-span {
-  color: whitesmoke;
-  font-size: 35px;
-  -webkit-text-stroke-width: 2px; /* largura da borda */
-  -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda *
-}
-
-.bloco__texto__lab {
-color: rgb(255, 238, 0);
-font-weight: bold;
-font-weight: 900;
-text-align: center;
-font-size: 25px;
--webkit-text-stroke-width: 1px; /* largura da borda */
--webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
-}
 
 .aviso {
   color: rgb(0, 0, 0);
@@ -94,11 +68,12 @@ font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 15px 0 15px;
-  padding: 0 15px 0 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .bloco__puts__input {
+width: 100%;
 margin: 10px 0;
 padding: 5px;
 overflow: hidden;
@@ -115,4 +90,10 @@ color: whitesmoke;
 border: 1px solid rgb(0, 0, 0);
 box-shadow: 2px 2px rgba(0, 0, 0, 0.514);
 cursor: pointer;
+}
+
+.resultado__pai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
